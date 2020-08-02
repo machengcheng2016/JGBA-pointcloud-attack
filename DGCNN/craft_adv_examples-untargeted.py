@@ -27,7 +27,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model_name', default='PointNet', help='PointNet PointNet2-SSG PointNet2-MSG DGCNN')
+    parser.add_argument('--model_name', default='DGCNN', help='DGCNN')
     parser.add_argument('--adv', type=str, required=True, help='JGBA JGBA_sw')
     parser.add_argument('--eps', type=float, required=True, help=0.3)
     parser.add_argument('--eps_iter', required=True, type=float, help='0.01')
