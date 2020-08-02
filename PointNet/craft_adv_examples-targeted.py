@@ -33,7 +33,7 @@ nbrs = NearestNeighbors(n_neighbors=top_k+1, algorithm='auto', metric='euclidean
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model_name', default='PointNet', help='PointNet PointNet2-SSG PointNet2-MSG DGCNN')
+    parser.add_argument('--model_name', default='PointNet', help='PointNet')
     parser.add_argument('--adv', type=str, required=True, help='JGBA JGBA_sw')
     parser.add_argument('--eps', type=float, required=True, help=0.3)
     parser.add_argument('--eps_iter', required=True, type=float, help='0.01')
