@@ -14,23 +14,6 @@ def requires_grad_(model:nn.Module, requires_grad:bool) -> None:
     for param in model.parameters():
         param.requires_grad_(requires_grad)
 
-
-def get_source_layers(model_name, model):
-    if model_name == 'PointNet':
-        # exclude relu, feat, dropout
-        layer_list = list(map(lambda name: (name, model._modules.get(name)), ['fc1', 'bn1', 'fc2', 'bn2', 'fc3']))
-        return list(enumerate(layer_list))
-
-    elif model_name == 'DenseNet121':
-        # exclude relu, convs, dropout
-        layer_list = list(map(lambda name: (name, model._modules.get(name)), ['linear1', 'bn6', 'linear2', 'bn7', 'linear3']))
-        return list(enumerate(layer_list))
-
-    else:
-        # model is not supported
-        assert False
-
-
 def clamp(input, min=None, max=None):
     ndim = input.ndimension()
     if min is None:
