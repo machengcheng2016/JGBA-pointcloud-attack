@@ -15,6 +15,11 @@ Location: ./dataset/random1024/whole_data_and_whole_label.pkl
 ## Model
 Four victim classifiers are tested with, including [PointNet](https://github.com/fxia22/pointnet.pytorch), [PointNet++ (SSG)](https://github.com/erikwijmans/Pointnet2_PyTorch), [PointNet++ (MSG)](https://github.com/erikwijmans/Pointnet2_PyTorch), and [DGCNN](https://github.com/WangYueFt/dgcnn).
 
+Remember to build pointnet++ first by: 
+```
+python setup.py build_ext --inplace
+```
+
 If there raise any error when you run the codes about the four models, please try to solve it by yourself before contacting us. Because we just fork the codes from their official repo :mask:
 
 Here are the download links for the checkpoints:
