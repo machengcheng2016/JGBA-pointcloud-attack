@@ -60,6 +60,15 @@ DGCNN
 Location: ./DGCNN/checkpoints/model.t7
 <br>
 
+## How to run
+untargeted attack:
+```
+craft_adv_examples-untargeted.py --adv JGBA --eps 0.1 --n 40 --eps_iter 0.01
+```
+targeted attack:
+```
+craft_adv_examples-targeted.py --adv JGBA --eps 0.1 --n 40 --eps_iter 0.01
+```
 
 ## Performance
 The success rates of our JGBA attack on both untargeted attack and targeted attack are satisfying, because we propose to break the SOR defense directly.
