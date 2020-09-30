@@ -94,7 +94,7 @@ if __name__ == '__main__':
             y_pred_adv_original = model(torch.from_numpy(np.copy(x_adv_original)[np.newaxis,:,:]).float().to(device))
             y_pred_adv_original_idx = np.argmax(y_pred_adv_original.detach().cpu().numpy().flatten())
             
-            if y_pred_adv_original_idx != label:        # make sure that original PGD fail to attack
+            if y_pred_adv_original_idx != label:        # attack success
                 cnt += 1
                 savemat(os.path.join('save', model_name, adv+'-'+str(eps)+'-'+str(int(n))+'-'+str(eps_iter), str(idx)+'.mat'), {'x_adv':x_adv_original, 'y_adv':y_pred_adv_original_idx, 'x':x, 'y':y_pred_idx})
                 

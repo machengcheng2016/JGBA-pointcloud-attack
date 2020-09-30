@@ -1,6 +1,18 @@
 # JGBA-pointcloud-attack
 Official code of MM'20 paper &lt;Efficient Joint Gradient Based Attack Against SOR Defense for 3D Point Cloud Classification>
 
+## Requirements
+torch >= 1.0
+
+numpy
+
+scipy
+
+sklearn
+
+tqdm [optional]
+
+
 ## Dataset
 We conduct experiments on a 1024-point downsampled version of ModelNet40 dataset, just as other point cloud adversarial attack papers do.
 

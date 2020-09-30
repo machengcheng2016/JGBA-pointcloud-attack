@@ -61,11 +61,11 @@ if __name__ == '__main__':
 
     if args.model_name == 'PointNet2-SSG':
         from pointnet2.models.pointnet2_ssg_cls import Pointnet2SSG
-        model = Pointnet2SSG(40, input_channels=0)  # , use_xyz=True)
+        model = Pointnet2SSG(40, input_channels=0)
         ckpt = torch.load('checkpoints_ssg/pointnet2_cls_best.pth.tar')['model_state']
     elif args.model_name == 'PointNet2-MSG':
         from pointnet2.models.pointnet2_msg_cls import Pointnet2MSG
-        model = Pointnet2MSG(40, input_channels=0)  # , use_xyz=True)
+        model = Pointnet2MSG(40, input_channels=0)
         ckpt = torch.load('checkpoints_msg/pointnet2_cls_best.pth.tar')['model_state']
     else:
         print('No such model architecture')
@@ -115,7 +115,7 @@ if __name__ == '__main__':
                 y_pred_adv_original = model(torch.from_numpy(np.copy(x_adv_original)[np.newaxis,:,:]).float().to(device))
                 y_pred_adv_original_idx = np.argmax(y_pred_adv_original.detach().cpu().numpy().flatten())
                 
-            if y_pred_adv_original_idx == target_label:        # make sure that original PGD success to targeted attack.
+            if y_pred_adv_original_idx == target_label:        # targeted attack success.
                 cnt += 1
                 savemat(os.path.join('save', model_name, adv+'-'+str(eps)+'-'+str(int(n))+'-'+str(eps_iter)+'-targeted', case, str(idx)+'.mat'), {'x_adv':x_adv_original, 'y_adv':y_pred_adv_original_idx, 'x':x, 'y':y_pred_idx})
                     
