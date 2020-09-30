@@ -19,9 +19,9 @@ We conduct experiments on a 1024-point downsampled version of ModelNet40 dataset
 Here is the download link for the dataset:
 
 [Google Drive](https://drive.google.com/file/d/1CDA67w5LDsjqaNgInNWdvH_efPMH0G90/view?usp=sharing)
-
+<br>
 [Baidu Drive](https://pan.baidu.com/s/1KJe2qIbTtbXbBB7VLVFSag) passwd: f9uy
-
+<br>
 Location: ./dataset/random1024/whole_data_and_whole_label.pkl
 
 ## Model
