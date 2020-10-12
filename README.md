@@ -72,7 +72,7 @@ python craft_adv_examples-targeted.py --adv JGBA --eps 0.1 --n 40 --eps_iter 0.0
 
 ## Performance
 The success rates of our JGBA attack on both untargeted attack and targeted attack are satisfying, because we propose to break the SOR defense directly.
-Please refer more experimental results to the final version of our paper.
+Please refer to the final version of our paper for more experimental results.
 
 ![GitHub](https://github.com/machengcheng2016/JGBA-pointcloud-attack/blob/master/fig/untargeted.png "Untargeted Attack Success Rate")
 
