@@ -63,11 +63,11 @@ Location: ./DGCNN/checkpoints/model.t7
 ## How to run
 untargeted attack:
 ```
-craft_adv_examples-untargeted.py --adv JGBA --eps 0.1 --n 40 --eps_iter 0.01
+python craft_adv_examples-untargeted.py --adv JGBA --eps 0.1 --n 40 --eps_iter 0.01
 ```
 targeted attack:
 ```
-craft_adv_examples-targeted.py --adv JGBA --eps 0.1 --n 40 --eps_iter 0.01
+python craft_adv_examples-targeted.py --adv JGBA --eps 0.1 --n 40 --eps_iter 0.01
 ```
 
 ## Performance
