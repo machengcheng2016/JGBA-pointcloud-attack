@@ -27,7 +27,7 @@ Location: ./dataset/random1024/whole_data_and_whole_label.pkl
 ## Model
 Four victim classifiers are tested with, including [PointNet](https://github.com/fxia22/pointnet.pytorch), [PointNet++ (SSG)](https://github.com/erikwijmans/Pointnet2_PyTorch), [PointNet++ (MSG)](https://github.com/erikwijmans/Pointnet2_PyTorch), and [DGCNN](https://github.com/WangYueFt/dgcnn).
 
-Remember to build pointnet++ first by: 
+Remember to build pointnet++ before attacking it: 
 ```
 python setup.py build_ext --inplace
 ```
