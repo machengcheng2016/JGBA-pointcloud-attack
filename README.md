@@ -78,3 +78,14 @@ Please refer to the final version of our paper for more experimental results.
 
 ![Github](https://github.com/machengcheng2016/JGBA-pointcloud-attack/blob/master/fig/targeted.png "Targeted Attack Success Rate")
 
+## Citation
+If you find this work useful, please consider citing our paper. We provide a BibTeX entry of our paper below:
+```
+@inproceedings{ma2020efficient,
+  title={Efficient Joint Gradient Based Attack Against SOR Defense for 3D Point Cloud Classification},
+  author={Ma, Chengcheng and Meng, Weiliang and Wu, Baoyuan and Xu, Shibiao and Zhang, Xiaopeng},
+  booktitle={Proceedings of the 28th ACM International Conference on Multimedia},
+  pages={1819--1827},
+  year={2020}
+}
+```
